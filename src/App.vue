@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <main-app />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import MainApp from "./components/MainApp";
 export default {
   name: "app",
-  components: {
-    HelloWorld
+  components: { MainApp },
+  mounted() {
+    document.addEventListener("DOMContentLoaded", function() {
+      const elems = document.querySelectorAll(".fixed-action-btn");
+      // eslint-disable-next-line no-undef
+      M.FloatingActionButton.init(elems);
+    });
   }
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>

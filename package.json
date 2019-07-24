@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "localforage": "^1.7.3",
+    "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.10"
   },
   "devDependencies": {
