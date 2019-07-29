@@ -15,6 +15,12 @@ export default {
       // eslint-disable-next-line no-undef
       M.FloatingActionButton.init(elems);
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems = document.querySelectorAll(".collapsible");
+      // eslint-disable-next-line no-undef
+      M.Collapsible.init(elems);
+    });
   }
 };
 </script>

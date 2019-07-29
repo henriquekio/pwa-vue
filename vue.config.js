@@ -1,7 +1,7 @@
 module.exports = {
   pwa: {
     name: "Todo",
-    themeColor: '#fafafa',
+    themeColor: "#fafafa",
     workboxPluginMode: "InjectManifest",
     workboxOptions: {
       swSrc: "src/service-worker.js"
