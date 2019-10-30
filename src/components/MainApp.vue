@@ -2,7 +2,7 @@
   <main>
     <div class="row">
       <div class="col s12 m6 offset-m3">
-        <h4>Minhas Tarefas</h4>
+        <h4>Minhas Todo list</h4>
         <form-task v-if="newTask" v-on:updateListTasks="getTasks" />
         <task-list v-on:updateTask="setTask" v-bind:task-list="todos" />
         <div class="row">
